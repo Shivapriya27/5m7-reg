@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Registration System</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+<button id="themeBtn">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+
+<div class="container">
+
+
+<h1>Event Registration Form</h1>
+
+
+<form id="registrationForm">
+
+
+<div class="row">
+
+
+<div class="input-box">
+<label>Full Name</label>
+<input type="text" id="name" placeholder="Enter your name">
+<small class="error"></small>
+</div>
+
+
+<div class="input-box">
+<label>Email</label>
+<input type="email" id="email" placeholder="Enter Email">
+<small class="error"></small>
+</div>
+
+
+</div>
+
+
+<div class="row">
+
+
+<div class="input-box">
+<label>Phone Number</label>
+<input type="text" id="phone" placeholder="10 Digit Number">
+<small class="error"></small>
+</div>
+
+
+<div class="input-box">
+<label>Age</label>
+<input type="number" id="age" placeholder="Age">
+<small class="error"></small>
+</div>
+
+
+</div>
+
+
+<div class="row">
+
+
+<div class="input-box">
+<label>Gender</label>
+
+
+<select id="gender">
+<option value="">Select</option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+
+
+</div>
+
+
+<div class="input-box">
+<label>Event</label>
+
+
+<select id="event">
+
+
+<option value="">Select Event</option>
+
+
+<option>Hackathon</option>
+
+
+<option>Workshop</option>
+
+
+<option>Coding Contest</option>
+
+
+<option>Tech Quiz</option>
+
+
+<option>Paper Presentation</option>
+
+
+<option>Project Expo</option>
+
+
+</select>
+
+
+</div>
+
+
+</div>
+
+
+<div class="row">
+
+
+<div class="input-box">
+
+
+<label>College Name</label>
+
+
+<input type="text" id="college">
+
+
+</div>
+
+
+<div class="input-box">
+
+
+<label>Department</label>
+
+
+<select id="department">
+
+
+<option>CSE</option>
+
+
+<option>ECE</option>
+
+
+<option>EEE</option>
+
+
+<option>Mechanical</option>
+
+
+<option>Civil</option>
+
+
+<option>AIML</option>
+
+
+<option>IT</option>
+
+
+</select>
+
+
+</div>
+
+
+</div>
+
+
+<div class="row">
+
+
+<div class="input-box">
+
+
+<label>Year</label>
+
+
+<select id="year">
+
+
+<option>1st Year</option>
+
+
+<option>2nd Year</option>
+
+
+<option>3rd Year</option>
+
+
+<option>4th Year</option>
+
+
+</select>
+
+
+</div>
+
+
+<div class="input-box">
+
+
+<label>Date of Birth</label>
+
+
+<input type="date" id="dob">
+
+
+</div>
+
+
+</div>
+
+
+<div class="row">
+
+
+<div class="input-box">
+
+
+<label>Password</label>
+
+
+<input type="password" id="password">
+
+
+</div>
+
+
+<div class="input-box">
+
+
+<label>Confirm Password</label>
+
+
+<input type="password" id="confirmPassword">
+
+
+</div>
+
+
+</div>
+
+
+<div class="row">
+
+
+<input type="checkbox" id="showPassword">
+
+
+<label for="showPassword">
+
+
+Show Password
+
+
+</label>
+
+
+</div>
+
+
+<div class="row">
+
+
+<input type="checkbox" id="terms">
+
+
+<label>
+
+
+I Agree to Terms and Conditions
+
+
+</label>
+
+
+</div>
+
+
+<div class="buttons">
+
+
+<button type="submit">
+
+
+Register
+
+
+</button>
+
+
+<button type="reset">
+
+
+Reset
+
+
+</button>
+
+
+</div>
+
+
+</form>
+
+
+<h2>Search Registered User</h2>
+
+
+<input type="text"
+
+
+id="search"
+
+
+placeholder="Search by Name">
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+
+<th>Name</th>
+
+
+<th>Email</th>
+
+
+<th>Phone</th>
+
+
+<th>Event</th>
+
+
+</tr>
+
+
+</thead>
+<tbody id="tableBody">
+</tbody>
+</table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
